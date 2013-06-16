@@ -1,0 +1,18 @@
+{
+  "name": "parsely",
+  "version": "0.0.1",
+  "description": "A super simple node.js wrapper around the parse.ly api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmacgregor/parsely.git"
+  },
+  "main": "index.js",
+  "private": true,
+  "author": {
+    "name": "Greg MacGregor"
+  },
+  "dependencies": {
+    "underscore": "~1.4.4",
+    "request": "~2.21.0"
+  }
+ }
