@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/gmacgregor/parsely.git"
   },
-  "main": "index.js",
+  "main": "parsely.js",
   "private": true,
   "author": {
     "name": "Greg MacGregor"
