@@ -6,11 +6,11 @@ describe('parsely', function () {
 
     describe('configuration', function () {
 
-        it('should have an api endpoint', function () {
+        it('should have an endpoint', function () {
             parsely.ROOT.should.equal('http://api.parsely.com');
         });
 
-        it('should have an api version', function () {
+        it('should be version v2', function () {
             parsely.VERSION.should.equal('v2');
         });
 
@@ -24,12 +24,12 @@ describe('parsely', function () {
 
     });
 
-    describe('api response', function () {
+    describe('response', function () {
 
         it('should be wrapped in a data envelope', function (done) {
             parsely.get('/analytics/posts', function (response) {
-                var data = JSON.parse(response).data;
-                data.should.be.an.instanceOf(Object);
+                var envelope = JSON.parse(response);
+                envelope.should.ownProperty('data');
                 done();
             });
         });
