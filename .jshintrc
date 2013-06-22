@@ -13,5 +13,6 @@
     "indent": 4,
     "strict": false,
     "trailing": true,
-    "smarttabs": true
+    "smarttabs": true,
+    "validthis": true
 }
