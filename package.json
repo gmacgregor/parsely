@@ -2,7 +2,12 @@
   "name": "parsely",
   "version": "0.0.1",
   "description": "A super simple node.js wrapper around the parse.ly api",
-  "keywords": ["parsely","api","analytics","publishers"],
+  "keywords": [
+    "parsely",
+    "api",
+    "analytics",
+    "publishers"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/gmacgregor/parsely.git"
@@ -17,7 +22,8 @@
   },
   "dependencies": {
     "request": "~2.21.0",
-    "underscore": "~1.4.4"
+    "underscore": "~1.4.4",
+    "express": "~3.4.0"
   },
   "devDependencies": {
     "mocha": "~1.11.0",

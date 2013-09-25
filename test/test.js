@@ -1,8 +1,14 @@
 
-var parsely = require('../parsely');
+var Parsely = require('../parsely');
 var should = require('should');
 
 describe('parsely', function () {
+
+    var parsely;
+
+    before(function () {
+        parsely = new Parsely();
+    });
 
     it('should have an endpoint', function () {
         parsely.ROOT.should.equal('http://api.parsely.com');
